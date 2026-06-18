@@ -535,9 +535,6 @@ ul, ol { list-style: none; }
 @media (max-width: 768px) {
   .cars-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
 }
-@media (max-width: 380px) {
-  .cars-grid { grid-template-columns: 1fr; }
-}
 
 /* ============================================================
    SECOND-HAND CAR BANNER
@@ -1251,3 +1248,210 @@ ul, ol { list-style: none; }
 
 .text-accent { color: var(--accent); }
 .mt-0 { margin-top: 0 !important; }
+
+/* ============================================================
+   MOBILE-FIRST OVERRIDES
+   Targeted fixes for phones (≤ 640px) and very small phones (≤ 360px)
+   ============================================================ */
+
+/* ── Hero ──────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .hero {
+    padding: 44px 16px 52px;
+  }
+  .hero-badge {
+    font-size: 11px;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    letter-spacing: -0.8px;
+    margin-bottom: 16px;
+  }
+  .hero-tagline {
+    margin-bottom: 28px;
+    font-size: 15px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    max-width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+  }
+}
+
+/* ── Trust strip ────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .trust-strip {
+    padding: 20px 16px;
+  }
+  .trust-inner {
+    gap: 12px;
+  }
+  .trust-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+  .trust-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+  .trust-text strong {
+    font-size: 12px;
+  }
+  .trust-text span {
+    font-size: 11px;
+  }
+}
+
+/* ── Cars section ───────────────────────────────────────── */
+@media (max-width: 640px) {
+  .cars-section {
+    padding: 36px 16px 44px;
+  }
+  .section-header {
+    margin-bottom: 24px;
+  }
+  .section-header h2 {
+    font-size: 22px;
+  }
+  .section-header p {
+    font-size: 14px;
+  }
+}
+
+/* Car card body tighter on mobile */
+@media (max-width: 640px) {
+  .cars-grid {
+    gap: 12px;
+  }
+  .car-card-body {
+    padding: 13px 13px 15px;
+  }
+  .car-card-model {
+    font-size: 15px;
+  }
+  .car-card-type {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+/* ── Banner ─────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .banner-inner {
+    padding: 28px 16px 32px;
+    gap: 20px;
+  }
+  .banner-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .banner-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .banner-inner h2 {
+    font-size: 19px;
+  }
+  .banner-inner p {
+    font-size: 13px;
+  }
+}
+
+/* ── Car model page hero ────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Show the car photo ABOVE the text on mobile */
+  .model-img-wrap {
+    order: -1;
+  }
+  .model-page-hero {
+    gap: 20px;
+    padding: 20px 16px 28px;
+  }
+  .model-info h1 {
+    font-size: clamp(22px, 6vw, 34px);
+  }
+  .model-desc {
+    font-size: 13px;
+  }
+}
+
+/* ── Parts section ──────────────────────────────────────── */
+@media (max-width: 640px) {
+  .parts-section {
+    padding: 0 14px 44px;
+  }
+  .parts-section-head {
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+  }
+  .parts-section-head h2 {
+    font-size: 16px;
+  }
+  .part-card {
+    border-radius: var(--r-sm);
+  }
+  .part-body {
+    padding: 10px 10px 12px;
+  }
+  .part-name {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .part-btn {
+    font-size: 11px;
+    padding: 8px 6px;
+    min-height: 36px;
+    gap: 4px;
+  }
+  .part-btn svg {
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+  }
+}
+
+/* ── Footer ─────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .footer {
+    padding: 36px 16px 24px;
+  }
+  .footer-grid {
+    gap: 24px;
+  }
+}
+
+/* ── Modal form ─────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .modal-top {
+    padding: 20px 16px 0;
+  }
+  .order-form {
+    padding: 16px 16px 24px;
+  }
+  .modal-title {
+    font-size: 17px;
+  }
+}
+
+/* ── Very small phones (≤ 360px) ────────────────────────── */
+@media (max-width: 360px) {
+  .nav-logo-name {
+    font-size: 15px;
+  }
+  /* Cars: 1 column on truly tiny screens */
+  .cars-grid {
+    grid-template-columns: 1fr;
+  }
+  /* Parts: 1 column on truly tiny screens */
+  .parts-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 36px 14px 44px;
+  }
+}
