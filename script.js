@@ -42,17 +42,17 @@ const CONFIG = {
    ============================================================ */
 const IMG = {
   bonnet:    'https://www.motrparts.com/wp-content/uploads/2019/07/Bonnet-Common.jpg',
-  door:      'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/1979_AMC_Concord_two-door_sedan_at_2015_AMO_meet-12.jpg/500px-1979_AMC_Concord_two-door_sedan_at_2015_AMO_meet-12.jpg',
+  door:      'images/parts/door.jpg',
   grille:    'https://www.motrparts.com/wp-content/uploads/2025/01/Maruti-Swift-Type-2-Radiator-Lower-Grill-Black-71721M68L00-5PK.webp',
   bumper:    'https://www.motrparts.com/wp-content/uploads/2019/04/Bumper-Common.jpg',
-  mirror:    'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Wing_mirror.jpg/500px-Wing_mirror.jpg',
-  wiper:     'https://upload.wikimedia.org/wikipedia/commons/4/45/Heckscheibenwischer_kl.jpg',
-  brakes:    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Brake_pad.jpg/500px-Brake_pad.jpg',
-  airfilter: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Air_filter%2C_opel_astra%282%29.JPG/500px-Air_filter%2C_opel_astra%282%29.JPG',
-  battery:   'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Photo-CarBattery.jpg/500px-Photo-CarBattery.jpg',
-  wheel:     'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Alloy_wheel_mercury.jpg/500px-Alloy_wheel_mercury.jpg',
-  glass:     'https://upload.wikimedia.org/wikipedia/commons/5/55/Panoramic-windshield.JPG',
-  seat:      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bricklin_SV-1_-_seat_detail_-_15809506379_%28cropped%29.jpg/500px-Bricklin_SV-1_-_seat_detail_-_15809506379_%28cropped%29.jpg',
+  mirror:    'images/parts/mirror.jpg',
+  wiper:     'images/parts/wiper.jpg',
+  brakes:    'images/parts/brakes.jpg',
+  airfilter: 'images/parts/airfilter.jpg',
+  battery:   'images/parts/battery.jpg',
+  wheel:     'images/parts/wheel.jpg',
+  glass:     'images/parts/glass.jpg',
+  seat:      'images/parts/seat.jpg',
 };
 
 /* ============================================================
@@ -69,8 +69,8 @@ const CARS = {
     type:      'Compact SUV',
     year:      '2017 – Present',
     desc:      'One of India\'s best-selling compact SUVs. We stock a wide range of genuine and OEM replacement parts for all Nexon variants.',
-    image:     'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tata_Nexon_Blue_Dual_Tone.jpg/800px-Tata_Nexon_Blue_Dual_Tone.jpg',
-    cardImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tata_Nexon_Blue_Dual_Tone.jpg/600px-Tata_Nexon_Blue_Dual_Tone.jpg',
+    image:     'images/tata-nexon.jpg',
+    cardImage: 'images/tata-nexon.jpg',
     parts: [
       { id: 'headlight',    name: 'Headlight',      image: 'https://www.motrparts.com/wp-content/uploads/2024/08/Tata-Nexon-Head-Light-Assy-With-MFR-LH-543854400101.webp' },
       { id: 'tail-light',   name: 'Tail Light',     image: 'https://www.motrparts.com/wp-content/uploads/2024/08/Tata-Nexon-Tail-Light-Assy-RH-543854400119.webp' },
@@ -98,8 +98,8 @@ const CARS = {
     type:      'Hatchback',
     year:      '2005 – Present',
     desc:      'India\'s most popular hatchback. Parts available for Swift 1st, 2nd, 3rd and 4th generation models.',
-    image:     'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/2024_Suzuki_Swift.jpg/800px-2024_Suzuki_Swift.jpg',
-    cardImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/2024_Suzuki_Swift.jpg/600px-2024_Suzuki_Swift.jpg',
+    image:     'images/maruti-swift.jpg',
+    cardImage: 'images/maruti-swift.jpg',
     parts: [
       { id: 'headlight',    name: 'Headlight',      image: 'https://www.motrparts.com/wp-content/uploads/2024/07/Maruti-Swift-Swift-Dzire-Type-3-Head-Light-Assy-LH-35300M55R10.webp' },
       { id: 'tail-light',   name: 'Tail Light',     image: 'https://www.motrparts.com/wp-content/uploads/2024/08/Maruti-Swift-Type-3-Tail-Light-Assy-RH-35650M55RA0.webp' },
@@ -127,8 +127,8 @@ const CARS = {
     type:      'Premium Hatchback',
     year:      '2008 – Present',
     desc:      'Premium hatchback with a huge parts ecosystem. We source parts for all i20 generations including the latest N-Line.',
-    image:     'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Hyundai_i20_%28BC3%29_IMG_4165.jpg/800px-Hyundai_i20_%28BC3%29_IMG_4165.jpg',
-    cardImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Hyundai_i20_%28BC3%29_IMG_4165.jpg/600px-Hyundai_i20_%28BC3%29_IMG_4165.jpg',
+    image:     'images/hyundai-i20.jpg',
+    cardImage: 'images/hyundai-i20.jpg',
     parts: [
       { id: 'headlight',    name: 'Headlight',      image: 'https://www.motrparts.com/wp-content/uploads/2024/06/HY-I20-Active-amp-Elite-Head-Light-Assy-RH-92102C7020.webp' },
       { id: 'tail-light',   name: 'Tail Light',     image: 'https://www.motrparts.com/wp-content/uploads/2024/06/HY-I20-Active-amp-Elite-Tail-Light-Assy-RH-92402C7000.webp' },
@@ -156,8 +156,8 @@ const CARS = {
     type:      'Sedan',
     year:      '1998 – Present',
     desc:      'India\'s favourite sedan for over two decades. Parts for all City generations — from 1st gen to the latest 5th gen hybrid.',
-    image:     'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Honda_City_%28sixth_generation%29_front.JPG/800px-Honda_City_%28sixth_generation%29_front.JPG',
-    cardImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Honda_City_%28sixth_generation%29_front.JPG/600px-Honda_City_%28sixth_generation%29_front.JPG',
+    image:     'images/honda-city.jpg',
+    cardImage: 'images/honda-city.jpg',
     parts: [
       { id: 'headlight',    name: 'Headlight',      image: 'https://www.motrparts.com/wp-content/uploads/2025/09/Head-light-Assy-LH-Fits-Honda-City-Type-1.webp' },
       { id: 'tail-light',   name: 'Tail Light',     image: 'https://www.motrparts.com/wp-content/uploads/2019/10/Honda-City-T6-Taillight-Assy-RH.jpg' },
@@ -185,8 +185,8 @@ const CARS = {
     type:      'Sub-Compact SUV',
     year:      '2019 – Present',
     desc:      'Feature-packed sub-compact SUV with strong safety ratings. We carry body and mechanical parts for all XUV300 trims.',
-    image:     'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mahindra_XUV300.jpg/800px-Mahindra_XUV300.jpg',
-    cardImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mahindra_XUV300.jpg/600px-Mahindra_XUV300.jpg',
+    image:     'images/mahindra-xuv300.jpg',
+    cardImage: 'images/mahindra-xuv300.jpg',
     parts: [
       { id: 'headlight',    name: 'Headlight',      image: 'https://autoclint.com/cdn/shop/files/MM1_1024x1024@2x.jpg?v=1696245443' },
       { id: 'tail-light',   name: 'Tail Light',     image: 'https://autoclint.com/cdn/shop/files/Untitled-1_e8ed1184-9ed6-4d9b-b8e9-5b3b862c1204_1024x1024@2x.jpg?v=1696245273' },
@@ -214,8 +214,8 @@ const CARS = {
     type:      'MPV',
     year:      '2004 – Present',
     desc:      'The most trusted family MPV in India. Parts available for Innova (2004–2015), Innova Crysta, and Innova HyCross.',
-    image:     'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Toyota_Innova_Crysta.jpg/800px-Toyota_Innova_Crysta.jpg',
-    cardImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Toyota_Innova_Crysta.jpg/600px-Toyota_Innova_Crysta.jpg',
+    image:     'images/toyota-innova.jpg',
+    cardImage: 'images/toyota-innova.jpg',
     parts: [
       { id: 'headlight',    name: 'Headlight',      image: 'https://www.motrparts.com/wp-content/uploads/2025/09/Head-Light-Assy-LH-Fits-Toyota-Innova-Type-2.webp' },
       { id: 'tail-light',   name: 'Tail Light',     image: 'https://www.motrparts.com/wp-content/uploads/2025/09/Tail-light-Assy-LH-Fits-Toyota-Innova-Crysta.webp' },
