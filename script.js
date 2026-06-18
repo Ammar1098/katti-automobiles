@@ -31,7 +31,7 @@ const CONFIG = {
   address:        'Athani, Karnataka – 591304',
 
   /* Sign up free at https://web3forms.com → paste your key here */
-  web3formsKey:   'YOUR_WEB3FORMS_ACCESS_KEY_HERE',
+  web3formsKey:   'f4c594b4-27b1-4ae9-9dc2-caebf12be786',
   /* ─────────────────────────────────────────────────────── */
 };
 
