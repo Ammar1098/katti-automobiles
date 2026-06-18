@@ -1,0 +1,32 @@
+# ============================================================
+# Katti Automobiles — netlify.toml
+# Tells Netlify that the root folder is the site to publish.
+# For git-based deploys. Not needed for drag-and-drop deploy.
+# ============================================================
+
+[build]
+  # Root of the site (current folder)
+  publish = "."
+
+# Cache static assets for performance
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
